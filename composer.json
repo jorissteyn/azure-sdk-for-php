@@ -19,7 +19,7 @@
         "microsoft/azure-storage-queue": "^1.0",
         "microsoft/azure-storage-table": "^1.0",
         "guzzlehttp/guzzle": "^6.2 || ^7.0.1",
-        "laminas/laminas-mime": "^2.6",
+        "laminas/laminas-mime": "^2.5 || dev-php8fork",
         "laminas/laminas-mail": "^2.7"
     },
     "require-dev": {
@@ -34,6 +34,12 @@
         "mayflower/php-codebrowser": "^1.1",
         "friendsofphp/php-cs-fixer": "^1.12.2"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/jorissteyn/laminas-mime.git"
+        }
+    ],
     "autoload": {
         "psr-4": { "WindowsAzure\\": "src/" }
     },
